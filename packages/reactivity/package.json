@@ -1,0 +1,6 @@
+{
+  "name": "reactivity",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module"
+}
