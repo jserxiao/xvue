@@ -1,7 +1,7 @@
 import { isObject } from "@xvue/shared";
-console.log(isObject(1));
-const k = () => {
-  return {
-    a: "1"
-  };
-};
+
+export * from "./computed";
+export * from "./effect";
+export * from "./ref";
+export * from "./reactive";
+export * from "./constants";

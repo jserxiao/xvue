@@ -1,1 +1,2 @@
-export const isObject = (obj) =>  Object.prototype.toString.call(obj) === '[object Object]'
+export const isObject = (obj: unknown): boolean =>
+  Object.prototype.toString.call(obj) === "[object Object]";
