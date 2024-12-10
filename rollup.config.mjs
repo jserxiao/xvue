@@ -1,6 +1,7 @@
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonJS from "@rollup/plugin-commonjs";
 import alias from "@rollup/plugin-alias";
+import typescript from "@rollup/plugin-typescript";
 
 const entries = {
   "@xvue/shared": "packages/shared/src/index.ts",
@@ -14,6 +15,9 @@ export default {
   plugins: [
     nodeResolve(),
     commonJS(),
+    typescript({
+      outDir: "dist"
+    }),
     alias({
       entries
     })
